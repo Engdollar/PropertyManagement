@@ -169,16 +169,29 @@ class CompanyMenuListener
             'module' => $module,
             'permission' => 'property inspections manage'
         ]);
+        // $menu->add([
+        //     'category' => 'Operations',
+        //     'title' => __('Tenant Communication'),
+        //     'icon' => '',
+        //     'name' => 'tenant-communications',
+        //     'parent' => 'property-management',
+        //     'order' => 65,
+        //     'ignore_if' => [],
+        //     'depend_on' => [],
+        //     'route' => 'tenant-communications.index',
+        //     'module' => $module,
+        //     'permission' => 'tenant communications manage'
+        // ]);
         $menu->add([
             'category' => 'Operations',
-            'title' => __('Tenant Communication'),
+            'title' => __('reports'),
             'icon' => '',
             'name' => 'tenant-communications',
             'parent' => 'property-management',
             'order' => 65,
             'ignore_if' => [],
             'depend_on' => [],
-            'route' => 'tenant-communications.index',
+            'route' => 'report.index',
             'module' => $module,
             'permission' => 'tenant communications manage'
         ]);

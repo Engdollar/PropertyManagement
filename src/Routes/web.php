@@ -12,6 +12,7 @@
 */
 
 use Illuminate\Support\Facades\Route;
+use workdo\PropertyManagement\Http\Controllers\PropertyReportController;
 use Workdo\PropertyManagement\Http\Controllers\ExpenseTrackingController;
 use Workdo\PropertyManagement\Http\Controllers\PropertycontractorsController;
 use Workdo\PropertyManagement\Http\Controllers\PropertyFrontController;
@@ -28,7 +29,7 @@ use Workdo\PropertyManagement\Http\Controllers\PropertyUtilitiesController;
 use Workdo\PropertyManagement\Http\Controllers\TenantCommunicationController;
 
 Route::middleware(['web'])->group(function () {
-    Route::group(['middleware' => ['auth', 'verified','PlanModuleCheck:PropertyManagement']], function () {
+    Route::group(['middleware' => ['auth', 'verified', 'PlanModuleCheck:PropertyManagement']], function () {
         // dashboard
         Route::get('dashboard/property', [PropertyManagementController::class, 'dashboard'])->name('dashboard.property');
 
@@ -42,11 +43,11 @@ Route::middleware(['web'])->group(function () {
             ]
         );
 
-        Route::get('tenant/status/{id}', [TenantController::class,'status'])->name('tenant.status');
-        Route::post('tenant/renew', [TenantController::class,'reNew'])->name('tenant.renew');
-        Route::post('tenant/getproperty', [PropertyMaintenanceRequestController::class,'getProperty'])->name('property.getproperty');
-        Route::post('tenant/getunit', [TenantController::class,'getUnit'])->name('property.getunit');
-        Route::post('tenant/getunitrent', [TenantController::class,'getUnitRent'])->name('property.getunitrent');
+        Route::get('tenant/status/{id}', [TenantController::class, 'status'])->name('tenant.status');
+        Route::post('tenant/renew', [TenantController::class, 'reNew'])->name('tenant.renew');
+        Route::post('tenant/getproperty', [PropertyMaintenanceRequestController::class, 'getProperty'])->name('property.getproperty');
+        Route::post('tenant/getunit', [TenantController::class, 'getUnit'])->name('property.getunit');
+        Route::post('tenant/getunitrent', [TenantController::class, 'getUnitRent'])->name('property.getunitrent');
 
         // property
         Route::resource('property', PropertyManagementController::class);
@@ -63,7 +64,7 @@ Route::middleware(['web'])->group(function () {
         // Invoice
         Route::resource('property-invoice', PropertyInvoiceController::class);
         Route::Put('property-invoice-status/{id}', [PropertyInvoiceController::class, 'statusUpdate'])->name('property.invoice.status.update');
-        Route::get('property-invoice/pdf/{id}', [PropertyInvoiceController::class,'pdf'])->name('property.invoice.pdf');
+        Route::get('property-invoice/pdf/{id}', [PropertyInvoiceController::class, 'pdf'])->name('property.invoice.pdf');
 
         Route::resource('property-listing', PropertyListingController::class);
         Route::post('property/details', [PropertyListingController::class, 'propertydetails'])->name('property.details');
@@ -72,7 +73,7 @@ Route::middleware(['web'])->group(function () {
         Route::post('property-listing-update/{id}', [PropertyListingController::class, 'update'])->name('property.list.update');
 
         // Tenant Request
-        Route::get('property-tenant-request', [PropertyTenantRequestController::class,'index'])->name('property-tenant-request.index');
+        Route::get('property-tenant-request', [PropertyTenantRequestController::class, 'index'])->name('property-tenant-request.index');
         Route::delete('property-tenant-request/{id}/destroy', [PropertyTenantRequestController::class, 'destroy'])->name('property-tenant-request.destroy');
         Route::get('property-tenant-convert/{id}/convert', [PropertyTenantRequestController::class, 'convert'])->name('tenant.convert');
         Route::post('tenant-convert/{id}/store', [PropertyTenantRequestController::class, 'convertStore'])->name('tenant.convert.store');
@@ -92,9 +93,12 @@ Route::middleware(['web'])->group(function () {
     });
 
     // property-details
-    Route::get('property/listing/{slug}/{lang?}', [PropertyFrontController::class,'copylink'])->name('property.listing');
+    Route::get('property/listing/{slug}/{lang?}', [PropertyFrontController::class, 'copylink'])->name('property.listing');
     Route::get('property-change-language-store/{slug?}/{lang}', [PropertyFrontController::class, 'changeLanquageStore'])->name('property.change.languagestore');
-    Route::get('/property-details/{slug}/{property_id}/{unit_id}/{lang?}', [PropertyFrontController::class,'property_details'])->name('get.property.detail');
+    Route::get('/property-details/{slug}/{property_id}/{unit_id}/{lang?}', [PropertyFrontController::class, 'property_details'])->name('get.property.detail');
     Route::get('/checkout-property/{slug}/{id}', [PropertyFrontController::class, 'Checkoutticket'])->name('checkout.property');
-    Route::post('/property-booking-store/{slug}', [PropertyFrontController::class,'store'])->name('property.booking.store');
+    Route::post('/property-booking-store/{slug}', [PropertyFrontController::class, 'store'])->name('property.booking.store');
+    // Property Report Routes
+    Route::resource('report', PropertyReportController::class);
+
 });
