@@ -1,0 +1,25 @@
+{
+    "name": "workdo/property-management",
+    "description": "Description for property-management package",
+    "type": "library",
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Workdo\\PropertyManagement\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "WorkDo",
+            "email": "support@workdo.io"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Workdo\\PropertyManagement\\Providers\\PropertyManagementServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,499 @@
+@media screen and (max-width: 1199px) {
+    :root {
+        --h1: normal 600 40px/1.2 var(--first-font);
+        --h2: normal 500 35px/1.2 var(--first-font);
+        --h3: normal 500 28px/1.2 var(--first-font);
+        --h4: normal 400 20px/1.2 var(--first-font);
+    }
+
+
+
+    .section-title h2::before {
+        height: 50px;
+    }
+
+    /* product sec start  */
+    .product-data, .product-price {
+        margin-bottom: 10px;
+    }
+
+    .product-data-inner li {
+        gap: 8px;
+    }
+
+    .product-card-content h2 {
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+
+    .product-content-bottom {
+        padding: 10px 0 0 0;
+    }
+
+    .product-card-content {
+        padding: 15px;
+    }
+
+    /* product sec end */
+    /* payment page css start  */
+    .form-control, input:not([type="submit"]), input:not([type="checkbox"]), input:not([type="button"]), input:not([type="radio"]), textarea {
+        padding: 12px 20px;
+    }
+
+    .payment-wrapper .radio-group label {
+        padding: 13px 20px;
+    }
+
+    .payment-wrapper .wrapper-content {
+        padding: 30px;
+    }
+
+    .radio-group label::before {
+        width: 20px;
+        height: 20px;
+        right: 20px;
+    }
+
+    .radio-group label::after {
+        width: 20px;
+        height: 20px;
+        right: 20px;
+    }
+
+    /* payment page css end */
+
+    /* property-details-sec start  */
+    .property-title {
+        margin-bottom: 10px;
+    }
+
+
+
+    .property-details-left .product-data-inner {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .property-details-left .btn-wrp {
+        margin-top: 20px;
+    }
+
+    .property-details-right h2 {
+        margin-bottom: 25px;
+        font-size: 24px;
+    }
+
+    .property-details-right .btn-wrp .btn {
+        margin-top: 30px;
+    }
+
+    .property-details-right {
+        padding: 30px 40px;
+    }
+
+    /* property-details-sec end */
+
+}
+
+@media screen and (max-width: 991px) {
+    :root {
+        --h1: normal 600 34px/1.2 var(--first-font);
+        --h2: normal 500 30px/1.2 var(--first-font);
+        --h3: normal 500 28px/1.2 var(--first-font);
+        --h5: normal 500 18px/1.2 var(--first-font);
+    }
+
+    .pt {
+        padding-top: 30px;
+    }
+
+    .pb {
+        padding-bottom: 30px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .section-title h2::before {
+        height: 40px;
+    }
+
+    .section-title h2 {
+        padding-left: 30px;
+    }
+
+    .section-title {
+        margin-bottom: 25px;
+    }
+
+    /* property payment page css start  */
+    .section-border {
+        padding-bottom: 10px;
+    }
+
+    .payment-wrapper .form-wrapper, .payment-wrapper .payment-options {
+        padding: 20px 0;
+    }
+
+    .payment-wrapper .wrapper-btns {
+        padding-top: 20px;
+    }
+
+    .payment-type label {
+        margin: 0px 0 15px;
+    }
+
+    .payment-wrapper .radio-group label img {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* property payment page css end */
+    /* product-image-sec css start  */
+    .product-img-slider {
+        padding: 20px;
+    }
+
+    /* product-image-sec  css end  */
+    /* property-details-sec start  */
+    .property-details-left h3 {
+        font-size: 22px;
+    }
+
+    .property-details-left .product-bg svg {
+        width: 26px;
+        height: 25px;
+    }
+
+    .property-details-right {
+        padding: 20px;
+    }
+
+
+
+    .property-details-right .btn-wrp .btn {
+        margin-top: 20px;
+    }
+
+    .property-details-left {
+        padding: 20px;
+    }
+
+    /* property-details-sec end  */
+
+    /* property-slider css start  */
+    .product-card {
+        box-shadow: none;
+        border: 1px solid var(--border-color);
+    }
+
+    .property-slider.swiper {
+        padding: 0 0;
+    }
+    .property-details-left{
+        max-width: 62%;
+    }
+    /* property-slider css end */
+
+}
+
+@media screen and (max-width: 767px) {
+    :root {
+        --h3: normal 500 24px/1.2 var(--first-font);
+        --h4: normal 400 18px/1.2 var(--first-font);
+        --h6: normal 500 14px/1.4 var(--first-font);
+        --common-text: normal 500 14px/1.2 var(--first-font);
+    }
+
+    .header-col {
+        margin: 20px 0 0 0;
+        padding: 0 15px;
+    }
+
+    .btn {
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    .site-footer .footer-logo {
+        max-width: 100px;
+    }
+
+    /* product sec start  */
+    .product-data li {
+        padding: 5px 7px;
+    }
+
+    .product-card-content {
+        padding: 10px 12px;
+    }
+
+    .product-card-content h2 {
+        font-size: 18px;
+    }
+
+    .product-data {
+        gap: 6px;
+    }
+
+    .product-data-inner {
+        padding: 0 0 8px 0;
+    }
+
+    .product-content-bottom .btn svg {
+        width: 14px;
+        height: 11px;
+    }
+    .section-border h3 {
+        font-size: 18px;
+    }
+    /* product sec end  */
+    /* property payment page css start  */
+    .payment-wrapper .radio-group label {
+        min-width: 220px;
+    }
+
+    .payment-type label {
+        font-size: 20px;
+    }
+
+    .payment-wrapper .payment-options .single-option {
+        width: calc(50% - 8px);
+    }
+
+    .payment-wrapper .payment-options {
+        gap: 15px;
+    }
+
+    /* property payment page css end  */
+
+    /* property-details-sec start  */
+    .property-details-left {
+        max-width: 100%;
+    }
+    .property-details-right ul li{
+        justify-content: center;
+    }
+
+    .property-details-right .btn-wrp .btn {
+        max-width: 50%;
+    }
+
+    .property-title-bg, .property-details-right ul li .media-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .property-title-bg svg, .property-details-right ul li .media-icon svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .property-details-right h2 {
+        margin-bottom: 20px;
+    }
+
+
+    .property-details-left h3 {
+        font-size: 18px;
+    }
+
+    /* property-details-sec end */
+
+    /* product-image-sec css start  */
+    .product-img-slider {
+        padding: 15px;
+    }
+
+    .property-img {
+        padding-top: 65%;
+    }
+
+    /* product-image-sec  css end  */
+}
+
+@media screen and (max-width: 640px) and (min-width: 576px) {
+    .product-data-inner li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-data-inner .product-bg svg,
+    .product-data-inner .product-bg img {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    :root {
+        --h1: normal 600 28px/1.2 var(--first-font);
+        --h2: normal 500 26px/1.2 var(--first-font);
+        --h3: normal 500 22px/1.2 var(--first-font);
+        --h5: normal 500 16px/1.2 var(--first-font);
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .product-row {
+        gap: 20px 0;
+    }
+
+    .pagination {
+        gap: 10px;
+        margin: 5px 0 0 auto;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .section-title h2::before {
+        height: 33px;
+        width: 7px;
+    }
+
+    .section-title h2 {
+        padding-left: 22px;
+    }
+
+    .section-title {
+        margin-bottom: 20px;
+    }
+  .wrapper-content  .section-border{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* property payment page css start  */
+    .payment-wrapper .wrapper-content {
+        padding: 15px;
+    }
+
+    .payment-wrapper .payment-options {
+        gap: 10px;
+    }
+
+    .payment-wrapper .payment-type li label {
+        min-width: 115px;
+    }
+
+    .payment-wrapper .form-wrapper, .payment-wrapper .payment-options {
+        padding: 15px 0;
+    }
+
+    .payment-type label {
+        font-size: 18px;
+    }
+
+    .payment-wrapper .radio-group label {
+        padding: 10px 20px;
+        min-width: 100%;
+    }
+
+    .payment-wrapper .payment-options .single-option {
+        width: 100%;
+    }
+
+    .form-control, input:not([type="submit"]), input:not([type="checkbox"]), input:not([type="button"]), input:not([type="radio"]), textarea {
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    /* property payment page css end */
+    /* property-details-sec start  */
+    .property-details-left .product-data-inner {
+        width: 100%;
+    }
+
+    .property-details-right ul li a {
+        font-size: 20px;
+    }
+
+    /* property-details-sec end  */
+
+    .product-card-content h2{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .property-img {
+        padding-top: 130%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    :root {
+        --h4: normal 400 14px/1.2 var(--first-font);
+    }
+
+    /* hedaer css start  */
+    .site-header .main-navigationbar .logo-col {
+        max-width: 100px;
+    }
+
+    .site-header .main-navigationbar .language-header>a {
+        padding: 5px 40px 5px 10px;
+    }
+
+    .site-header .main-navigationbar .language-header>a::after {
+        right: 13px;
+    }
+
+    .site-header .main-navigationbar .language-header .menu-dropdown {
+        min-width: 150px;
+        padding: 10px;
+    }
+
+    /* hedaer css end */
+
+    .payment-wrapper .wrapper-btns {
+        justify-content: center;
+    }
+
+    /* property-details sec start  */
+
+    .property-details-left {
+        padding: 15px;
+    }
+
+    .property-details-left .product-data-inner li {
+        gap: 8px;
+        max-width: calc(33.33% - 7px);
+    }
+
+    .property-details-left .product-data-inner {
+        padding: 10px;
+        justify-content: center;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    .property-details-left h3 {
+        font-size: 16px;
+    }
+
+    /* property-details sec end  */
+
+}

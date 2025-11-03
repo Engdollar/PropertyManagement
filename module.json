@@ -1,0 +1,10 @@
+{
+    "name": "PropertyManagement",
+    "alias": "Property Management",
+    "description": "",
+    "priority": 730,
+    "version": 2.2,
+    "monthly_price": 0,
+    "yearly_price": 0,
+    "package_name": "property-management"
+}
